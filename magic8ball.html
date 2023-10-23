@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Magic 8 Ball</title>
+        <link rel="stylesheet" href="style.css">
+        <script defer src="magic8ball.js"></script>
+    </head>
+    <body>
+        <h1>Magic 8 Ball</h1>
+        <p><a href="index.html">Back to home page</a></p>
+        <hr>
+        <p>Enter a question for the magic 8 ball:</p>
+        <input id="question">
+        <svg width="500" height="500" id="8ball">
+            <style>
+                #message {
+                    user-select: none;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -khtml-user-select: none;
+                    -ms-user-select: none;
+                }
+            </style>
+            <defs>
+                <radialGradient id="grad1" cx="50%" cy="20%" r="70%" fx="50%" fy="50%">
+                    <stop offset="0%" style="stop-color:#4f4f4f;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+                </radialGradient>
+            </defs>
+            <circle cx="250" cy="250" r="200" fill="url(#grad1)" />
+            <circle id="circle" cx="250" cy="250" r="85" fill="#ffffff" />
+            <g id="message">
+                <text x="250" y="250" text-anchor="middle" dominant-baseline="middle" style="font-size: 75px;">8</text>
+            </g>
+        </svg>
+        <hr>
+        <p id="out"></p>
+    </body>
+</html>

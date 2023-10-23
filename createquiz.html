@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Algebra Quiz</title>
+        <link rel="stylesheet" href="style.css">
+        <script defer src="createquiz.js"></script>
+    </head>
+    <body>
+        <h1>Algebra Quiz</h1>
+        <p><a href="index.html">Back to home page</a></p>
+        <hr>
+        <p>
+            Give non-integer answers as decimals rounded to the nearest hundredth.
+        </p>
+        <ol class="quiz">
+            <li>
+                <label for="question0">2x + 3 = 5<br>x = </label>
+                <input id="question0" type="number">
+                <span id="ans0"></span>
+            </li>
+            <li>
+                <label for="question1">9x = 3<br>x = </label>
+                <input id="question1" type="number">
+                <span id="ans1"></span>
+            </li>
+            <li>
+                <label for="question2">x - 6 = 3x + 1<br>x = </label>
+                <input id="question2" type="number">
+                <span id="ans2"></span>
+            </li>
+            <li>
+                <label for="question3">2x² + 5x + 3 = 0<br>x = </label>
+                <input id="question3" type="number">
+                <span id="ans3"></span>
+                <br>
+                <span>(give one possible solution)</span>
+            </li>
+        </ol>
+        <hr>
+        <button id="mark-btn">Mark quiz</button>
+        <p id="mark"></p>
+    </body>
+</html>

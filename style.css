@@ -1,0 +1,33 @@
+body {
+    width: 75%;
+    margin: auto;
+    font-family: sans-serif;
+}
+
+.center {
+    text-align: center;
+}
+
+b {
+    font-weight: bold;
+    display: inline-block;
+}
+
+li {
+    padding-bottom: 1.0em;
+}
+
+ol.quiz li {
+    padding-bottom: 1.5em;
+    line-height: 150%;
+}
+
+table {
+    border: none;
+}
+
+svg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
